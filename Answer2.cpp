@@ -13,9 +13,9 @@ void per(string v,int i,int j){
         g.push_back(v);
     }
     else{
-        for(int k=i;k<j;k++){
+        for(int k=i;k<=j;k++){
             v=swap(v,k,i);
-            per(v,k+1,j);
+            per(v,i+1,j);
             v=swap(v,k,i);
         }
     }
